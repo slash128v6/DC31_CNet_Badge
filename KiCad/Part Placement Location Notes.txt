@@ -1,0 +1,20 @@
+
+
+Front Clockwise from 12 o'clock
+J1 100 53 90
+J2 133 142.5
+J3 67 142.5
+
+
+
+Rear Clockwise from 12 o'clock
+J1 100 53 -90
+J2 133 142.5
+J3 67 142.5
+J4 61 61 135
+
+Sw1 142.5 142.5
+SW2 57.5 142.5
+
+
+
