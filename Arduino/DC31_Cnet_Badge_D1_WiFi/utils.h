@@ -14,8 +14,6 @@ boolean autoCycle = true; // flag for automatic effect changes
 boolean eepromOutdated = false; // flag for when EEPROM may need to be updated
 byte currentBrightness = STARTBRIGHTNESS; // 0-255 will be scaled to 0-MAXBRIGHTNESS
 
-boolean wifiEnabledFlag = false; // flag for wifi mode
-
 CRGBPalette16 currentPalette(RainbowColors_p); // global palette storage
 
 typedef void (*functionList)(); // definition for list of effect function pointers
@@ -118,35 +116,6 @@ void confirmBlink() {
     fillAll(CRGB::Black);
     FastLED.delay(200);
     fillAll(CRGB::DarkRed);
-    FastLED.show();
-    FastLED.delay(200);
-    fillAll(CRGB::Black);
-    FastLED.delay(200);
-  }
-
-}
-
-// Interrupt normal operation to indicate that wifi mode has changed
-void wifiBlink() {
-
-  if (wifiEnabledFlag) { // two blue blinks, wifi mode active
-    fillAll(CRGB::DarkBlue);
-    FastLED.show();
-    FastLED.delay(200);
-    fillAll(CRGB::Black);
-    FastLED.delay(200);
-  fillAll(CRGB::DarkBlue);
-    FastLED.show();
-    FastLED.delay(200);
-    fillAll(CRGB::Black);
-    FastLED.delay(200);
-  } else { // two green blinks, wifi mode disabled
-    fillAll(CRGB::DarkGreen);
-    FastLED.show();
-    FastLED.delay(200);
-    fillAll(CRGB::Black);
-    FastLED.delay(200);
-    fillAll(CRGB::DarkGreen);
     FastLED.show();
     FastLED.delay(200);
     fillAll(CRGB::Black);

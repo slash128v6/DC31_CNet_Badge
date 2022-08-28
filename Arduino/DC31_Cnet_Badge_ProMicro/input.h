@@ -1,8 +1,8 @@
 // Process input
 
 #define NUMBUTTONS 2
-#define MODEBUTTON D5
-#define BRIGHTNESSBUTTON D6
+#define MODEBUTTON 6
+#define BRIGHTNESSBUTTON 5
 
 #define BTNIDLE 0
 #define BTNDEBOUNCING 1
@@ -87,7 +87,7 @@ void doButtons() {
 
     case BTNLONGPRESS: // button was held down for a while
       autoCycle = !autoCycle; // toggle auto cycle mode
-      confirmBlink(); // two green blink: auto mode. two red blinks: manual mode.
+      confirmBlink(); // one green blink: auto mode. two red blinks: manual mode.
       eepromMillis = currentMillis;
       eepromOutdated = true;
       break;
@@ -112,5 +112,5 @@ void doButtons() {
       break;
 
   }
-
+  
 }
