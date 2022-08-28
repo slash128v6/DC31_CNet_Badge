@@ -1,8 +1,9 @@
 // Process input
 
-#define NUMBUTTONS 2
-#define MODEBUTTON D6
-#define BRIGHTNESSBUTTON D7
+#define NUMBUTTONS 3
+#define MODEBUTTON D5
+#define BRIGHTNESSBUTTON D6
+#define WIFISERVER D7
 
 #define BTNIDLE 0
 #define BTNDEBOUNCING 1
@@ -16,7 +17,7 @@
 
 unsigned long buttonEvents[NUMBUTTONS];
 byte buttonStatuses[NUMBUTTONS];
-byte buttonmap[NUMBUTTONS] = {BRIGHTNESSBUTTON, MODEBUTTON};
+byte buttonmap[NUMBUTTONS] = {BRIGHTNESSBUTTON, MODEBUTTON, WIFISERVER};
 
 void updateButtons() {
   for (byte i = 0; i < NUMBUTTONS; i++) {
@@ -87,7 +88,7 @@ void doButtons() {
 
     case BTNLONGPRESS: // button was held down for a while
       autoCycle = !autoCycle; // toggle auto cycle mode
-      confirmBlink(); // one green blink: auto mode. two red blinks: manual mode.
+      confirmBlink(); // two green blink: auto mode. two red blinks: manual mode.
       eepromMillis = currentMillis;
       eepromOutdated = true;
       break;
@@ -112,5 +113,25 @@ void doButtons() {
       break;
 
   }
-  
+
+  // Check the wifi server button
+  switch (buttonStatus(2)) {
+
+    /**
+    case BTNRELEASED: // button was pressed and released quickly
+      wifiEnabledFlag = 1; // switch to wifi mode
+      eepromMillis = currentMillis;
+      eepromOutdated = true;
+      break;
+    **/
+    case BTNLONGPRESS: // button was held down for a while
+      wifiEnabledFlag = !wifiEnabledFlag; // toggle wifi mode
+      //autoCycle = !autoCycle; // toggle auto cycle mode
+      wifiBlink(); // two blue blinks: wifi mode enabled. two green blinks: wifi mode disabled.
+      eepromMillis = currentMillis;
+      eepromOutdated = true;
+      break;
+
+  }
+
 }
