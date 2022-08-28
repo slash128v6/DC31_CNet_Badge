@@ -20,8 +20,8 @@
 //
 //   Press and hold SW2 button for one second to reset brightness to default value
 //
-//   For WiFi control connect to the SSID defined in the code below with the key also defined
-//   It is recommended to change the SSID and key to something unique for each badge
+//   For WiFi control connect to using the SSID and Key defined at line 140 below
+//   (recommended to change to something unique)
 //   Using a web browser connect to http://192.168.4.1
 //   The same functions available using buttons are available on the above web page
 //
@@ -137,7 +137,7 @@ void setup() {
 	pinMode(MODEBUTTON, INPUT_PULLUP);
 	pinMode(BRIGHTNESSBUTTON, INPUT_PULLUP);
 
-	WiFi.softAP("neopixel", "neopixel"); // this is the SSID and password, recommend to change to something else
+	WiFi.softAP("Neopixel", "neopixel"); // this is the SSID and password, recommend to change to something else
 	server.begin();
 }
 
