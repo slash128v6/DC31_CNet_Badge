@@ -20,7 +20,7 @@
 //
 //   Press and hold SW2 button for one second to reset brightness to default value
 //
-//   For WiFi control connect to using the SSID and Key defined at line 140 below
+//   For WiFi control connect to using the SSID and Key defined in "secrets.h"
 //   (recommended to change to something unique)
 //   Using a web browser connect to http://192.168.4.1
 //   The same functions available using buttons are available on the above web page
@@ -73,7 +73,7 @@
 #include "colorPalette.h"
 #include "patterns.h"
 #include "input.h"
-//#include "wifiserver.h"
+#include "secrets.h"
 
 #include <ESP8266WiFi.h>
 
@@ -137,7 +137,7 @@ void setup() {
 	pinMode(MODEBUTTON, INPUT_PULLUP);
 	pinMode(BRIGHTNESSBUTTON, INPUT_PULLUP);
 
-	WiFi.softAP("Neopixel", "neopixel"); // this is the SSID and password, recommend to change to something else
+	WiFi.softAP(SECRET_SSID, SECRET_PASS); // this is the SSID and password, recommend to change to something else
 	server.begin();
 }
 
