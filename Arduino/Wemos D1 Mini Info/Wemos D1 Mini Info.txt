@@ -5,11 +5,11 @@ LED:	D3
 SW1:	D5
 SW2:	D6
 
-SAO Functions *Not enough GPIO on Wemos D1 mini for separate SAO GPIO1 & GPIO2
+SAO Functions *Not enough GPIO on Wemos D1 mini for both SAO GPIO
 SDA:	D2
 SCL:	D1
 GPIO1:	D7
-GPIO2:	D7
+GPIO2:	NC
 
 Boards and Libraries:
 ESP8266 Boards 2.4.1

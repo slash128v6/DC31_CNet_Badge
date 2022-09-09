@@ -1,9 +1,12 @@
 //
-//
 //   @slash128 2023
 //   CompuNet DC31
 //
-//
+//   Code borrowed from:
+//   RGB Shades Demo Code
+//   Copyright (c) 2015 macetech LLC
+//   This software is provided under the MIT License (see LICENSE)
+//   Special credit to Mark Kriegsman for XY mapping code//
 //   Badge Operation:
 //
 //   The main power switch selects battery power or USB power
@@ -20,14 +23,13 @@
 //
 //   Press and hold SW2 button for one second to reset brightness to default value
 //
-//   For WiFi control connect to using the SSID and Key defined in "secrets.h"
+//   For WiFi control connect the SSID using the key, both defined in "secrets.h"
 //   (recommended to change to something unique)
 //   Using a web browser connect to http://192.168.4.1
-//   The same functions available using buttons are available on the above web page
+//   The same functions available using buttons are available on the web page
 //
 //   Brightness, selected effect, and auto-cycle are saved in EEPROM after a delay
 //   The badge will automatically start up with the last-selected settings
-//
 //
 //   Programming the Badge from the Arduino IDE:
 //
@@ -53,7 +55,7 @@
 #define CHIPSET WS2811
 
 // Global maximum brightness value, maximum 255
-#define MAXBRIGHTNESS 64
+#define MAXBRIGHTNESS 255
 #define STARTBRIGHTNESS 128
 
 // Cycle time (milliseconds between pattern changes)
@@ -114,7 +116,7 @@ void checkWiFi();
 void setup() {
 	// put your setup code here, to run once:
 
-	Serial.begin(9600);
+	Serial.begin(115200);
 
 	// check to see if EEPROM has been used yet
 	// if so, load the stored settings
