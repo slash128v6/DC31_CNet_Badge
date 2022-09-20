@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name "DC31_Cnet_Badge_Rear")(type "KiCad")(uri "${KIPRJMOD}/DC31_Cnet_Badge_Rear.pretty")(options "")(descr ""))
-  (lib (name "JS202011CQN")(type "KiCad")(uri "${KIPRJMOD}/JS202011CQN")(options "")(descr ""))
-  (lib (name "wemos_mini")(type "KiCad")(uri "${KIPRJMOD}/wemos_mini")(options "")(descr ""))
-)
