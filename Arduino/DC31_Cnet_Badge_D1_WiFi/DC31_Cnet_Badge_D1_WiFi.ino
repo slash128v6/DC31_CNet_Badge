@@ -7,7 +7,7 @@
 //   Copyright (c) 2015 macetech LLC
 //   This software is provided under the MIT License (see LICENSE)
 //   Special credit to Mark Kriegsman for XY mapping code
-//   
+//
 //   Badge Operation:
 //
 //   The main power switch selects battery power or USB power
