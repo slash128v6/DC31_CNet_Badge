@@ -137,6 +137,7 @@ void checkEEPROM() {
       updateEEPROM(1, currentPattern);
       updateEEPROM(2, autoCycle);
       updateEEPROM(3, currentBrightness);
+      EEPROM.commit();
       eepromOutdated = false;
     }
   }

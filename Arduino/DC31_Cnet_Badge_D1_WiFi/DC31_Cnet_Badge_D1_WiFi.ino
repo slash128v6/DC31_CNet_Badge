@@ -67,6 +67,7 @@
 
 // Time after changing settings before settings are saved to EEPROM
 #define EEPROMDELAY 2000
+#define EEPROM_SIZE 12
 
 // Includes
 #include <FastLED.h>
@@ -118,6 +119,9 @@ void setup() {
 	// put your setup code here, to run once:
 
 	Serial.begin(115200);
+
+  //Init EEPROM
+  EEPROM.begin(EEPROM_SIZE);
 
 	// check to see if EEPROM has been used yet
 	// if so, load the stored settings
