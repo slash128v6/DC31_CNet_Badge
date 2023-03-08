@@ -1,0 +1,17 @@
+Wemos D1 Mini Pin Usage:
+
+Board Functions
+LED:	D3
+SW1:	D5
+SW2:	D6
+
+SAO Functions *Not enough GPIO on Wemos D1 mini for both SAO GPIO
+SDA:	D2
+SCL:	D1
+GPIO1:	D7
+GPIO2:	NC
+
+Boards and Libraries:
+esp8266 by ESP8266 Community Boards ver 2.4.1
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+FastLED by Daniel Garcia Library ver 3.1.6

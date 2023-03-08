@@ -1,0 +1,1416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{01b7f0ff-6486-499e-bc28-6dc0d832fb6a}</ProjectGuid>
+    <avrdevice>ATmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>DC31_Cnet_Badge_D1_WiFi</AssemblyName>
+    <Name>DC31_Cnet_Badge_D1_WiFi</Name>
+    <RootNamespace>DC31_Cnet_Badge_D1_WiFi</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega32u4 -B "%24(PackRepoDir)\atmel\ATmega_DFP\2.0.401\gcc\dev\atmega32u4"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>ARDUINO_ESP8266_WEMOS_D1MINI</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../DC31_Cnet_Badge_D1_WiFi</Value>
+      <Value>C:/Users/jgranat/My Drive/Env/Documents/Arduino/libraries/FastLED</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/EEPROM</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/libb64</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/variants/d1_mini</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags />
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>ARDUINO_ESP8266_WEMOS_D1MINI</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../DC31_Cnet_Badge_D1_WiFi</Value>
+      <Value>C:/Users/jgranat/My Drive/Env/Documents/Arduino/libraries/FastLED</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/EEPROM</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/libb64</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/variants/d1_mini</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\2.0.401\include\</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../DC31_Cnet_Badge_D1_WiFi;C:/Users/jgranat/My Drive/Env/Documents/Arduino/libraries/FastLED;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun;C:/Program Files (x86)/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include-fixed;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/EEPROM;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/libb64;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/spiffs;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/umm_malloc;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/variants/d1_mini;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/libc/xtensa-lx106-elf/include;C:/Users/jgranat/AppData/Local/Temp/VMBuilds/DC31_Cnet_Badge_D1_WiFi/yun/Release/core;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip2/include;{build.path}/core;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <arduino.board.name>esp8266_d1_mini</arduino.board.name>
+        <arduino.board.desc>WeMos D1 R2 &amp; mini</arduino.board.desc>
+        <arduino.board.property_bag>name=WeMos D1 R2 &amp; mini
+build.board=ESP8266_WEMOS_D1MINI
+build.variant=d1_mini
+upload.tool=esptool
+upload.maximum_data_size=81920
+upload.wait_for_upload_port=true
+upload.erase_cmd=
+serial.disableDTR=true
+serial.disableRTS=true
+build.mcu=esp8266
+build.core=esp8266
+build.spiffs_pagesize=256
+build.debug_port=
+build.debug_level=
+menu.CpuFrequency.80=80 MHz
+menu.CpuFrequency.80.build.f_cpu=80000000L
+menu.CpuFrequency.160=160 MHz
+menu.CpuFrequency.160.build.f_cpu=160000000L
+upload.resetmethod=nodemcu
+build.flash_mode=dio
+build.flash_freq=40
+menu.FlashSize.4M1M=4M (1M SPIFFS)
+menu.FlashSize.4M1M.build.flash_size=4M
+menu.FlashSize.4M1M.build.flash_size_bytes=0x400000
+menu.FlashSize.4M1M.build.flash_ld=eagle.flash.4m1m.ld
+menu.FlashSize.4M1M.build.spiffs_pagesize=256
+menu.FlashSize.4M1M.upload.maximum_size=1044464
+menu.FlashSize.4M1M.build.rfcal_addr=0x3FC000
+menu.FlashSize.4M1M.build.spiffs_start=0x300000
+menu.FlashSize.4M1M.build.spiffs_end=0x3FB000
+menu.FlashSize.4M1M.build.spiffs_blocksize=8192
+menu.FlashSize.4M3M=4M (3M SPIFFS)
+menu.FlashSize.4M3M.build.flash_size=4M
+menu.FlashSize.4M3M.build.flash_size_bytes=0x400000
+menu.FlashSize.4M3M.build.flash_ld=eagle.flash.4m.ld
+menu.FlashSize.4M3M.build.spiffs_pagesize=256
+menu.FlashSize.4M3M.upload.maximum_size=1044464
+menu.FlashSize.4M3M.build.rfcal_addr=0x3FC000
+menu.FlashSize.4M3M.build.spiffs_start=0x100000
+menu.FlashSize.4M3M.build.spiffs_end=0x3FB000
+menu.FlashSize.4M3M.build.spiffs_blocksize=8192
+menu.LwIPVariant.v2mss536=v2 Lower Memory
+menu.LwIPVariant.v2mss536.build.lwip_include=lwip2/include
+menu.LwIPVariant.v2mss536.build.lwip_lib=-llwip2
+menu.LwIPVariant.v2mss536.build.lwip_flags=-DLWIP_OPEN_SRC -DTCP_MSS=536
+menu.LwIPVariant.v2mss1460=v2 Higher Bandwidth
+menu.LwIPVariant.v2mss1460.build.lwip_include=lwip2/include
+menu.LwIPVariant.v2mss1460.build.lwip_lib=-llwip2_1460
+menu.LwIPVariant.v2mss1460.build.lwip_flags=-DLWIP_OPEN_SRC -DTCP_MSS=1460
+menu.LwIPVariant.Prebuilt=v1.4 Higher Bandwidth
+menu.LwIPVariant.Prebuilt.build.lwip_lib=-llwip_gcc
+menu.LwIPVariant.Prebuilt.build.lwip_flags=-DLWIP_OPEN_SRC
+menu.LwIPVariant.OpenSource=v1.4 Compile from source
+menu.LwIPVariant.OpenSource.build.lwip_lib=-llwip_src
+menu.LwIPVariant.OpenSource.build.lwip_flags=-DLWIP_OPEN_SRC
+menu.LwIPVariant.OpenSource.recipe.hooks.sketch.prebuild.1.pattern=make -C "{runtime.platform.path}/tools/sdk/lwip/src" install TOOLS_PATH="{runtime.tools.xtensa-lx106-elf-gcc.path}/bin/xtensa-lx106-elf-"
+menu.Debug.Disabled=Disabled
+menu.Debug.Disabled.build.debug_port=
+menu.Debug.Serial=Serial
+menu.Debug.Serial.build.debug_port=-DDEBUG_ESP_PORT=Serial
+menu.Debug.Serial1=Serial1
+menu.Debug.Serial1.build.debug_port=-DDEBUG_ESP_PORT=Serial1
+menu.DebugLevel.None____=None
+menu.DebugLevel.None____.build.debug_level=
+menu.DebugLevel.SSL=SSL
+menu.DebugLevel.SSL.build.debug_level=-DDEBUG_ESP_SSL
+menu.DebugLevel.TLS_MEM=TLS_MEM
+menu.DebugLevel.TLS_MEM.build.debug_level=-DDEBUG_ESP_TLS_MEM
+menu.DebugLevel.HTTP_CLIENT=HTTP_CLIENT
+menu.DebugLevel.HTTP_CLIENT.build.debug_level=-DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.HTTP_SERVER=HTTP_SERVER
+menu.DebugLevel.HTTP_SERVER.build.debug_level=-DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEM=SSL+TLS_MEM
+menu.DebugLevel.SSLTLS_MEM.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM
+menu.DebugLevel.SSLHTTP_CLIENT=SSL+HTTP_CLIENT
+menu.DebugLevel.SSLHTTP_CLIENT.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.SSLHTTP_SERVER=SSL+HTTP_SERVER
+menu.DebugLevel.SSLHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_CLIENT=TLS_MEM+HTTP_CLIENT
+menu.DebugLevel.TLS_MEMHTTP_CLIENT.build.debug_level=-DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.TLS_MEMHTTP_SERVER=TLS_MEM+HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_SERVER.build.debug_level=-DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.HTTP_CLIENTHTTP_SERVER=HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.HTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENT=SSL+TLS_MEM+HTTP_CLIENT
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENT.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.SSLTLS_MEMHTTP_SERVER=SSL+TLS_MEM+HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLHTTP_CLIENTHTTP_SERVER=SSL+HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.SSLHTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_CLIENTHTTP_SERVER=TLS_MEM+HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVER=SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.CORE=CORE
+menu.DebugLevel.CORE.build.debug_level=-DDEBUG_ESP_CORE
+menu.DebugLevel.WIFI=WIFI
+menu.DebugLevel.WIFI.build.debug_level=-DDEBUG_ESP_WIFI
+menu.DebugLevel.HTTP_UPDATE=HTTP_UPDATE
+menu.DebugLevel.HTTP_UPDATE.build.debug_level=-DDEBUG_ESP_HTTP_UPDATE
+menu.DebugLevel.UPDATER=UPDATER
+menu.DebugLevel.UPDATER.build.debug_level=-DDEBUG_ESP_UPDATER
+menu.DebugLevel.OTA=OTA
+menu.DebugLevel.OTA.build.debug_level=-DDEBUG_ESP_OTA
+menu.DebugLevel.OOM=OOM
+menu.DebugLevel.OOM.build.debug_level=-DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+menu.DebugLevel.COREWIFIHTTP_UPDATEUPDATEROTAOOM=CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM
+menu.DebugLevel.COREWIFIHTTP_UPDATEUPDATEROTAOOM.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVERCOREWIFIHTTP_UPDATEUPDATEROTAOOM=SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVERCOREWIFIHTTP_UPDATEUPDATEROTAOOM.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_CORE -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+menu.DebugLevel.NoAssert-NDEBUG=NoAssert-NDEBUG
+menu.DebugLevel.NoAssert-NDEBUG.build.debug_level=-DNDEBUG
+menu.FlashErase.none=Only Sketch
+menu.FlashErase.none.upload.erase_cmd=
+menu.FlashErase.sdk=Sketch + WiFi Settings
+menu.FlashErase.sdk.upload.erase_cmd=-ca "{build.rfcal_addr}" -cz 0x4000
+menu.FlashErase.all=All Flash Contents
+menu.FlashErase.all.upload.erase_cmd=-ca 0x0 -cz "{build.flash_size_bytes}"
+menu.UploadSpeed.921600=921600
+menu.UploadSpeed.921600.upload.speed=921600
+menu.UploadSpeed.9600=9600
+menu.UploadSpeed.9600.upload.speed=9600
+menu.UploadSpeed.57600=57600
+menu.UploadSpeed.57600.upload.speed=57600
+menu.UploadSpeed.115200=115200
+menu.UploadSpeed.115200.upload.speed=115200
+menu.UploadSpeed.230400.linux=230400
+menu.UploadSpeed.230400.macosx=230400
+menu.UploadSpeed.230400.upload.speed=230400
+menu.UploadSpeed.256000.windows=256000
+menu.UploadSpeed.256000.upload.speed=256000
+menu.UploadSpeed.460800.linux=460800
+menu.UploadSpeed.460800.macosx=460800
+menu.UploadSpeed.460800.upload.speed=460800
+menu.UploadSpeed.512000.windows=512000
+menu.UploadSpeed.512000.upload.speed=512000
+menu.UploadSpeed.256000=256000
+menu.UploadSpeed.512000=512000
+runtime.ide.path=C:\Program Files (x86)\Arduino
+runtime.os=windows
+build.system.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\system
+runtime.ide.version=108019
+target_package=esp8266
+target_platform=esp8266
+runtime.hardware.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266
+originalid=d1_mini
+intellisense.tools.path={compiler.toolchain.path}
+intellisense.include.paths={runtime.tools.xtensa-lx106-elf-gcc.path}\xtensa-lx106-elf\include\c++\4.8.2;{runtime.tools.xtensa-lx106-elf-gcc.path}\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;{runtime.tools.xtensa-lx106-elf-gcc.path}\xtensa-lx106-elf\include;{runtime.tools.xtensa-lx106-elf-gcc.path}\lib\gcc\xtensa-lx106-elf\4.8.2\include;{runtime.platform.path}\tools\sdk\include;{vm.intellisense.add-paths}
+tools.wwwfiles.name=ESP8266 Sketch Data Upload
+tools.wwwfiles.ssh=false
+tools.wwwfiles.cmd.windows=ESP8266FSUpload.exe
+recipe.wwwfiles.upload.pattern="{vm.path}/{tools.wwwfiles.cmd}" -serial.port={serial.port} -build.path="{build.path}" -target_platform="{target_platform}" -runtime.tools.mkspiffs.path="{runtime.tools.mkspiffs.path}" -board.name="{name}" -upload.verbose={upload.verbose} -upload.resetmethod={upload.resetmethod} -upload.speed={upload.speed}  -platform.path="{platform.path}" -project.name="{project.name}" -project.path="{project.path}" -tools.esptool.cmd="{tools.esptool.cmd}" -runtime.tools.esptool.path="{runtime.tools.esptool.path}" -compiler.path="{compiler.path}" -build.spiffs_start="{build.spiffs_start}" -build.spiffs_end="{build.spiffs_end}" -build.spiffs_pagesize="{build.spiffs_pagesize}" -build.spiffs_blocksize="{build.spiffs_blocksize}" -network.password={network.password} -network.auth_upload={network.auth_upload} -network.port={network.port}
+exceptions.serial.enabled=true
+exceptions.serial.messages={vm.platform.root.path}/hardware/esp8266/exceptions.txt
+exceptions.serial.regex.exception_number=Exception \(([0-9]*)\):
+exceptions.serial.regex.stack_addresses=40[0-2][0-9a-f]{5}\b
+exceptions.serial.resolve.addr2line.args=-aipfC -e"{build.path}/{build.project_name}.elf"
+exceptions.serial.resolve.addr2line.cmd=xtensa-lx106-elf-addr2line
+exceptions.serial.resolve.stack_addresses.pattern="{compiler.path}{addr2line.cmd}" {addr2line.args} {stack_addresses.list}
+upload.8dot3=false
+upload.verbose_disabled=true
+tools.gdbstub.cmd=xtensa-lx106-elf-gdb.exe
+tools.gdbstub.path={runtime.tools.xtensa-lx106-elf-gcc.path}/bin
+tools.gdbstub.debug.args=-ex "set remote hardware-breakpoint-limit 1" -ex "set remote hardware-watchpoint-limit 1" -ex "set remote interrupt-on-connect on" -ex "set remote kill-packet off" -ex "set remote symbol-lookup-packet off" -ex "set remote verbose-resume-packet off" -ex "mem 0x20000000 0x3fefffff ro cache" -ex "mem 0x3ff00000 0x3fffffff rw" -ex "mem 0x40000000 0x400fffff ro cache" -ex "mem 0x40100000 0x4013ffff rw cache" -ex "mem 0x40140000 0x5fffffff ro cache" -ex "mem 0x60000000 0x60001fff rw" -ex "set serial baud 115200" -ex "target remote \\.\{serial.debug.port}" -ex "file {{{build.path}/{build.project_name}.elf}}"
+tools.gdbstub.showLocalSerialPort=true
+debug_menu.debugger_type.hwdebugger=Hardware
+debug_menu.hwdebugger=Debugger
+debug_menu.hwdebugger.gdbstub=GDB Stub
+debug_menu.hwdebugger.gdbstub.debug.tool=gdbstub
+meta_gdbstub.sentence=This debugger requires the esp8266 2.5.0+ Core to be installed (install/update via Boards Manager).
+meta_gdbstub.comment=To use this debugger, include the &lt;GDBStub.h&gt;, add 'debug_init();' to setup(). Set vMicro &gt; Debugger &gt; 'Compiler Optimization' to 'No Project', 'No Project + Libraries' or 'None' when debugging. (NOTE: Changing the optimization setting for this platform might cause compilation errors with certain code such as HardwareSerial.)
+meta_gdbstub.image.connect=https://www.visualmicro.com/pics/Debug-Break-ESP8266Huzzah_USBOnly.png
+meta_gdbstub.image.operation=https://www.visualmicro.com/pics/Debug-Break-ESP8266-GDBStub-VSOnly.png
+meta_gdbstub.reference.usage.url=https://www.visualmicro.com/page/User-Guide.aspx?doc=Arduino-gdb-Tutorial.html
+vmboard.totalpins=18
+vmboard.totalanalogpins=1
+tools.wwwfiles.cmd=ESP8266FSUpload.exe
+version=2.4.1
+compiler.warning_flags=-w
+compiler.warning_flags.none=-w
+compiler.warning_flags.default=
+compiler.warning_flags.more=-Wall
+compiler.warning_flags.all=-Wall -Wextra
+build.lwip_lib=-llwip_gcc
+build.lwip_include=lwip/include
+build.lwip_flags=-DLWIP_OPEN_SRC
+build.float=-u _printf_float -u _scanf_float
+build.led=
+compiler.path={runtime.tools.xtensa-lx106-elf-gcc.path}/bin/
+compiler.sdk.path={runtime.platform.path}/tools/sdk
+compiler.libc.path={runtime.platform.path}/tools/sdk/libc/xtensa-lx106-elf
+compiler.cpreprocessor.flags=-D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I{compiler.sdk.path}/include" "-I{compiler.sdk.path}/{build.lwip_include}" "-I{compiler.libc.path}/include" "-I{build.path}/core"
+compiler.c.cmd=xtensa-lx106-elf-gcc
+compiler.c.flags=-c {compiler.warning_flags} -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -ffunction-sections -fdata-sections
+compiler.S.cmd=xtensa-lx106-elf-gcc
+compiler.S.flags=-c -g -x assembler-with-cpp -MMD -mlongcalls
+compiler.c.elf.flags=-g {compiler.warning_flags} -Os -nostdlib -Wl,--no-check-sections -u call_user_start {build.float} -Wl,-static "-L{compiler.sdk.path}/lib" "-L{compiler.sdk.path}/ld" "-L{compiler.libc.path}/lib" "-T{build.flash_ld}" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,spi_flash_read
+compiler.c.elf.cmd=xtensa-lx106-elf-gcc
+compiler.c.elf.libs=-lhal -lphy -lpp -lnet80211 {build.lwip_lib} -lwpa -lcrypto -lmain -lwps -laxtls -lespnow -lsmartconfig -lairkiss -lwpa2 -lstdc++ -lm -lc -lgcc
+compiler.cpp.cmd=xtensa-lx106-elf-g++
+compiler.cpp.flags=-c {compiler.warning_flags} -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections
+compiler.as.cmd=xtensa-lx106-elf-as
+compiler.ar.cmd=xtensa-lx106-elf-ar
+compiler.ar.flags=cru
+compiler.elf2hex.cmd=esptool
+compiler.elf2hex.flags=
+compiler.size.cmd=xtensa-lx106-elf-size
+compiler.esptool.cmd=esptool.exe
+compiler.esptool.cmd.windows=esptool.exe
+build.extra_flags=-DESP8266
+compiler.c.extra_flags=
+compiler.c.elf.extra_flags=
+compiler.S.extra_flags=
+compiler.cpp.extra_flags=
+compiler.ar.extra_flags=
+compiler.objcopy.eep.extra_flags=
+compiler.elf2hex.extra_flags=
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.cpreprocessor.flags} {compiler.c.flags} -DF_CPU={build.f_cpu} {build.lwip_flags} {build.debug_port} {build.debug_level} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DARDUINO_BOARD="{build.board}" {build.led} {compiler.c.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpreprocessor.flags} {compiler.cpp.flags} -DF_CPU={build.f_cpu} {build.lwip_flags} {build.debug_port} {build.debug_level} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DARDUINO_BOARD="{build.board}" {build.led} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.S.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.cpreprocessor.flags} {compiler.S.flags} -DF_CPU={build.f_cpu} {build.lwip_flags} {build.debug_port} {build.debug_level} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DARDUINO_BOARD="{build.board}" {build.led} {compiler.c.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} {compiler.ar.extra_flags} "{archive_file_path}" "{object_file}"
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {compiler.c.elf.flags} {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" -Wl,--start-group {object_files} "{build.path}/{archive_file}" {compiler.c.elf.libs} -Wl,--end-group  "-L{build.path}"
+recipe.objcopy.eep.pattern=
+recipe.objcopy.hex.pattern="{runtime.tools.esptool.path}/{compiler.esptool.cmd}" -eo "{runtime.platform.path}/bootloaders/eboot/eboot.elf" -bo "{build.path}/{build.project_name}.bin" -bm {build.flash_mode} -bf {build.flash_freq} -bz {build.flash_size} -bs .text -bp 4096 -ec -eo "{build.path}/{build.project_name}.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+recipe.output.tmp_file={build.project_name}.bin
+recipe.output.save_file={build.project_name}.{build.variant}.bin
+recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
+recipe.size.regex=^(?:\.irom0\.text|\.text|\.data|\.rodata|)\s+([0-9]+).*
+recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
+tools.esptool.cmd=esptool.exe
+tools.esptool.cmd.windows=esptool.exe
+tools.esptool.path={runtime.tools.esptool.path}
+tools.esptool.network_cmd=python.exe
+tools.esptool.network_cmd.windows=python.exe
+tools.esptool.upload.protocol=esp
+tools.esptool.upload.params.verbose=-vv
+tools.esptool.upload.params.quiet=
+tools.esptool.upload.pattern="{path}/{cmd}" {upload.verbose} -cd {upload.resetmethod} -cb {upload.speed} -cp "{serial.port}" {upload.erase_cmd} -ca 0x00000 -cf "{build.path}/{build.project_name}.bin"
+tools.esptool.upload.network_pattern="{network_cmd}" "{runtime.platform.path}/tools/espota.py" -i "{serial.port}" -p "{network.port}" "--auth={network.password}" -f "{build.path}/{build.project_name}.bin"
+tools.mkspiffs.cmd=mkspiffs.exe
+tools.mkspiffs.cmd.windows=mkspiffs.exe
+tools.mkspiffs.path={runtime.tools.mkspiffs.path}
+upload.verify=
+tools.vmopenocd.cmd=bin/openocd.exe
+tools.vmopenocd.cmd.windows=bin/openocd.exe
+tools.vmopenocd.debug.params.verbose=-d2
+tools.vmopenocd.debug.params.quiet=-d0
+tools.vmopenocd.debug.address=localhost:3333
+tools.vmopenocd.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.scriptPath=-s "{path}/scripts/"
+tools.vmopenocd.logging=-l "{{build.path}/{build.project_name}_DebugOpenOCD.log}"
+tools.vmopenocd.boardCmd=
+tools.vmopenocd.targetCmd=
+tools.vmopenocd.initCmd=
+tools.vmopenocd.debug.pattern="{path}/{cmd}" {debug.verbose} {logging} {scriptPath} {boardCmd} {targetCmd} {initCmd}
+tools.vmopenocd.program.cmd=bin/openocd.exe
+tools.vmopenocd.program.cmd.windows=bin/openocd.exe
+tools.vmopenocd.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.program.address=localhost:3333
+tools.vmopenocd.program.params.verbose=-d2
+tools.vmopenocd.program.params.quiet=-d0
+tools.vmopenocd.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.vmopenocd.program.pattern="{path}/{cmd}" {program.verbose} {scriptPath} {boardCmd} {targetCmd} -c "echo -n {{program.elf.message}}" {programCmd}
+tools.atmelICE.protocol=
+tools.atmelICE.debug.cmd=arm-none-eabi-gdb.exe
+tools.atmelICE.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.atmelICE.debug.pattern="{path}/{cmd}"
+tools.atmelICE.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.atmelICE.server.initCmd=-c "init"
+tools.atmelICE.server.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.server.tool=vmopenocd
+tools.atmelICE.debug.server=vmopenocd
+tools.atmelICE.program.scriptPath=-s "{program.path}/scripts/"
+tools.atmelICE.program.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.program.cmd=bin/openocd.exe
+tools.atmelICE.program.cmd.windows=bin/openocd.exe
+tools.atmelICE.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.atmelICE.program.address=localhost:3333
+tools.atmelICE.program.params.verbose=-d2
+tools.atmelICE.program.params.quiet=-d0
+tools.atmelICE.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.atmelICE.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.atmelICE.program.extra_params=
+tools.atmelICE.program.protocol=
+tools.atmelICE.erase.params.verbose=-d3
+tools.atmelICE.erase.params.quiet=-d0
+tools.atmelICE.erase.pattern=
+tools.jlink.cmd=arm-none-eabi-gdb.exe
+tools.jlink.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.jlink.pattern="{path}/{cmd}"
+tools.jlink.server.tool=vmopenocd
+tools.jlink.debug.server=vmopenocd
+tools.jlink.server.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.jlink.server.initCmd=-c "init"
+tools.jlink.program.scriptPath=-s "{program.path}/scripts/"
+tools.jlink.program.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.program.cmd=bin/openocd.exe
+tools.jlink.program.cmd.windows=bin/openocd.exe
+tools.jlink.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.program.address=localhost:3333
+tools.jlink.program.params.verbose=-d2
+tools.jlink.program.params.quiet=-d0
+tools.jlink.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.jlink.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.jlink.upload.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.upload.cmd=bin/openocd.exe
+tools.jlink.upload.cmd.windows=bin/openocd.exe
+tools.jlink.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.upload.address=localhost:3333
+tools.jlink.upload.params.verbose=-d2
+tools.jlink.upload.params.quiet=-d0
+tools.jlink.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.bmp_upload.cmd=arm-none-eabi-gdb.exe
+tools.bmp_upload.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
+tools.bmp_upload.program.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.upload.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.bmp_upload.server.initCmd=-c "init"
+tools.bmp_upload.showLocalSerialPort=true
+tools.bmp_upload.debug.server=
+tools.stlinkv2.description=
+tools.stlinkv2.cmd=arm-none-eabi-gdb.exe
+tools.stlinkv2.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.stlinkv2.pattern="{path}/{cmd}"
+tools.stlinkv2.server.tool=vmopenocd
+tools.stlinkv2.debug.server=vmopenocd
+tools.stlinkv2.server.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.stlinkv2.server.initCmd=-c "init"
+tools.stlinkv2.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.stlinkv2.upload.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.upload.cmd=bin/openocd.exe
+tools.stlinkv2.upload.cmd.windows=bin/openocd.exe
+tools.stlinkv2.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.stlinkv2.upload.address=localhost:3333
+tools.stlinkv2.upload.params.verbose=-d2
+tools.stlinkv2.upload.params.quiet=-d0
+tools.stlinkv2.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.stlinkv2.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.stlinkv2.upload.extra_params=
+tools.stlinkv2.upload.protocol=
+tools.stlinkv2.protocol=
+tools.f2232mm.cmd=arm-none-eabi-gdb.exe
+tools.f2232mm.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232mm.pattern="{path}/{cmd}" {args}
+tools.f2232mm.server.tool=vmopenocd
+tools.f2232mm.debug.server=vmopenocd
+tools.f2232mm.server.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232mm.server.initCmd=-c "init"
+tools.f2232mm.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232mm.upload.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.upload.cmd=bin/openocd.exe
+tools.f2232mm.upload.cmd.windows=bin/openocd.exe
+tools.f2232mm.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232mm.upload.address=localhost:3333
+tools.f2232mm.upload.params.verbose=-d2
+tools.f2232mm.upload.params.quiet=-d0
+tools.f2232mm.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232mm.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232mm.upload.extra_params=
+tools.f2232mm.upload.protocol=
+tools.f2232mm.protocol=
+tools.f2232h.server.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.cmd=arm-none-eabi-gdb.exe
+tools.f2232h.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232h.pattern="{path}/{cmd}"
+tools.f2232h.server.tool=vmopenocd
+tools.f2232h.debug.server=vmopenocd
+tools.f2232h.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232h.server.initCmd=-c "init"
+tools.f2232h.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232h.upload.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.upload.cmd=bin/openocd.exe
+tools.f2232h.upload.cmd.windows=bin/openocd.exe
+tools.f2232h.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232h.upload.address=localhost:3333
+tools.f2232h.upload.params.verbose=-d2
+tools.f2232h.upload.params.quiet=-d0
+tools.f2232h.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232h.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232h.upload.extra_params=
+tools.f2232h.upload.protocol=
+tools.f2232h.protocol=
+vm.platform.root.path=C:\Program Files (x86)\Atmel\Studio\7.0\Extensions\jikf5v4k.012\Micro Platforms\arduino16x
+runtime.tools.signing={runtime.platform.path}/tools/signing.py
+runtime.tools.elf2bin={runtime.platform.path}/tools/elf2bin.py
+runtime.tools.sizes={runtime.platform.path}/tools/sizes.py
+runtime.tools.makecorever={runtime.platform.path}/tools/makecorever.py
+runtime.tools.eboot={runtime.platform.path}/bootloaders/eboot/eboot.elf
+build.vtable_flags=-DVTABLES_IN_FLASH
+build.sslflags=
+build.exception_flags=-fno-exceptions
+build.stdcpp_lib=-lstdc++
+build.stdcpp_level=-std=gnu++11
+build.sdk=NONOSDK22x_190703
+build.debug_flags=
+build.protocol_flags=
+recipe.hooks.sketch.prebuild.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.signing}" --mode header --publickey "{build.source.path}/public.key" --out "{build.path}/core/Updater_Signing.h"
+recipe.hooks.linking.prelink.1.pattern="{compiler.path}{compiler.c.cmd}" -CC -E -P {build.vtable_flags} "{runtime.platform.path}/tools/sdk/ld/eagle.app.v6.common.ld.h" -o "{build.path}/local.eagle.app.v6.common.ld"
+recipe.objcopy.hex.1.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.elf2bin}" --eboot "{runtime.tools.eboot}" --app "{build.path}/{build.project_name}.elf" --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size {build.flash_size} --path "{runtime.tools.xtensa-lx106-elf-gcc.path}/bin" --out "{build.path}/{build.project_name}.bin"
+recipe.objcopy.hex.2.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.signing}" --mode sign --privatekey "{build.source.path}/private.key" --bin "{build.path}/{build.project_name}.bin" --out "{build.path}/{build.project_name}.bin.signed" --legacy "{build.path}/{build.project_name}.bin.legacy_sig"
+recipe.objcopy.hex.3.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.sizes}" --elf "{build.path}/{build.project_name}.elf" --path "{runtime.tools.xtensa-lx106-elf-gcc.path}/bin"
+tools.mklittlefs.cmd=mklittlefs.exe
+tools.mklittlefs.cmd.windows=mklittlefs.exe
+tools.mklittlefs.path={runtime.platform.path}/tools/mklittlefs
+runtime.tools.esptool.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\esptool\0.4.13
+runtime.tools.esptool-0.4.13.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\esptool\0.4.13
+runtime.tools.xtensa-lx106-elf-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2
+runtime.tools.xtensa-lx106-elf-gcc-1.20.0-26-gb404fb9-2.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2
+runtime.tools.mkspiffs.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\mkspiffs\0.2.0
+runtime.tools.mkspiffs-0.2.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\mkspiffs\0.2.0
+runtime.tools.arduinoOTA.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arduinoOTA\1.2.1
+runtime.tools.arduinoOTA-1.2.1.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arduinoOTA\1.2.1
+runtime.tools.arduinoOTA-1.3.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arduinoOTA\1.3.0
+runtime.tools.arm-none-eabi-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arm-none-eabi-gcc\9-2019q4
+runtime.tools.arm-none-eabi-gcc-9-2019q4.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arm-none-eabi-gcc\9-2019q4
+runtime.tools.avrdude.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avrdude\6.3.0-arduino17
+runtime.tools.avrdude-6.3.0-arduino17.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avrdude\6.3.0-arduino17
+runtime.tools.avr-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5
+runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino5.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5
+runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+runtime.tools.bossac.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\bossac\1.8.0-48-gb176eee
+runtime.tools.bossac-1.7.0-arduino3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\bossac\1.7.0-arduino3
+runtime.tools.bossac-1.8.0-48-gb176eee.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\bossac\1.8.0-48-gb176eee
+runtime.tools.CMSIS.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS\5.4.0
+runtime.tools.CMSIS-5.4.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS\5.4.0
+runtime.tools.CMSIS-Atmel.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS-Atmel\1.2.0
+runtime.tools.CMSIS-Atmel-1.2.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS-Atmel\1.2.0
+runtime.tools.esptool_py.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\esptool_py\2.6.1
+runtime.tools.esptool_py-2.6.1.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\esptool_py\2.6.1
+runtime.tools.mklittlefs.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\mklittlefs\2.5.0-4-fe5bb56
+runtime.tools.mklittlefs-2.5.0-4-fe5bb56.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\mklittlefs\2.5.0-4-fe5bb56
+runtime.tools.mkspiffs-0.2.3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\mkspiffs\0.2.3
+runtime.tools.mkspiffs-2.5.0-4-b40a506.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\mkspiffs\2.5.0-4-b40a506
+runtime.tools.openocd.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\openocd\0.10.0-arduino7
+runtime.tools.openocd-0.10.0-arduino7.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\openocd\0.10.0-arduino7
+runtime.tools.pqt-elf2uf2.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-elf2uf2\1.4.0-b-cb31b54
+runtime.tools.pqt-elf2uf2-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-elf2uf2\1.4.0-b-cb31b54
+runtime.tools.pqt-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-gcc\1.4.0-b-cb31b54
+runtime.tools.pqt-gcc-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-gcc\1.4.0-b-cb31b54
+runtime.tools.pqt-mklittlefs.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-mklittlefs\1.4.0-b-cb31b54
+runtime.tools.pqt-mklittlefs-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-mklittlefs\1.4.0-b-cb31b54
+runtime.tools.pqt-openocd.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-openocd\1.4.0-b-cb31b54
+runtime.tools.pqt-openocd-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-openocd\1.4.0-b-cb31b54
+runtime.tools.pqt-pioasm.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-pioasm\1.4.0-b-cb31b54
+runtime.tools.pqt-pioasm-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-pioasm\1.4.0-b-cb31b54
+runtime.tools.pqt-python3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-python3\1.0.1-base-3a57aed
+runtime.tools.pqt-python3-1.0.1-base-3a57aed.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-python3\1.0.1-base-3a57aed
+runtime.tools.python3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\python3\3.7.2-post1
+runtime.tools.python3-3.7.2-post1.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\python3\3.7.2-post1
+runtime.tools.tools-avr.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+runtime.tools.xtensa-esp32-elf-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-80-g6c4433a-5.2.0
+runtime.tools.xtensa-esp32-elf-gcc-1.22.0-80-g6c4433a-5.2.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-80-g6c4433a-5.2.0
+runtime.tools.xtensa-lx106-elf-gcc-2.5.0-4-b40a506.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\xtensa-lx106-elf-gcc\2.5.0-4-b40a506
+runtime.vm.boardinfo.id=esp8266_d1_mini
+runtime.vm.boardinfo.name=esp8266_d1_mini
+runtime.vm.boardinfo.desc=WeMos D1 R2 &amp; mini
+runtime.vm.boardinfo.src_location=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1
+ide.hint=Use installed IDE (hardware, reference/help + libraries)
+ide.location.key=Arduino16x
+ide.location.ide.winreg=Arduino 1.6.x Application
+ide.location.sketchbook.winreg=Arduino 1.6.x Sketchbook
+ide.location.sketchbook.preferences=sketchbook.path
+ide.default.revision_name=1.8.13
+ide.default.version=10800
+ide.default.package=arduino
+ide.default.platform=avr
+ide.multiplatform=true
+ide.includes=Arduino.h
+ide.exe_name=arduino
+ide.recipe.preproc.defines.flags=-w -x c++ -E -dM
+ide.platformswithoutpackage=false
+ide.includes.fallback=wprogram.h
+ide.extension=ino
+ide.extension.fallback=pde
+ide.versionGTEQ=160
+ide.exe=arduino.exe
+ide.builder.exe=arduinobuilder.exe
+ide.builder.name=Arduino Builder
+ide.hosts=atmel
+ide.url=https://www.visualmicro.com/page/Download-Arduino-Or-Other-Supporting-IDEs.aspx
+ide.help.reference.path=reference
+ide.help.reference.path2=reference\www.arduino.cc\en\Reference
+ide.help.reference.serial=reference\www.arduino.cc\en\Serial
+ide.location.preferences.portable={runtime.ide.path}\portable
+ide.location.preferences.arduinoData={runtime.sketchbook.path}\ArduinoData
+ide.location.preferences=%VM_APPDATA_LOCAL%\arduino15\preferences.txt
+ide.location.preferences_fallback=%VM_APPDATA_ROAMING%\arduino15\preferences.txt
+ide.location.contributions=%VM_APPDATA_LOCAL%\arduino15
+ide.location.contributions_fallback=%VM_APPDATA_ROAMING%\arduino15
+ide.contributions.boards.allow=true
+ide.contributions.boards.ignore_unless_rewrite_found=true
+ide.contributions.libraries.allow=true
+ide.contributions.boards.support.urls.wiki=https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls
+ide.create_platforms_from_boardsTXT.teensy=build.core
+vm.debug=true
+software=ARDUINO
+ssh.user.name=root
+ssh.user.default.password=arduino
+ssh.host.wwwfiles.path=/www/sd
+build.working_directory={runtime.ide.path}\java\bin
+runtime.tools.vm_web_debugger.path={vm.platform.root.path}/../../Micro Debuggers/WebDebugger
+recipe.hooks.vmdeploy.vm_web_debugger_postupload.1.pattern="{runtime.tools.vm_web_debugger.path}/DeployMicroWebserver.exe" "{sketch_path}" "{serial.port}" "{runtime.hardware.path}\.."
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.1.pattern=notepad.exe "{sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat"
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.2.pattern={sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat
+ide.debug_menu.debugger_type=Debug
+ide.debug_menu.debugger_type.none=Off
+ide.debug_menu.none.debug.tool=no_debug
+ide.debug_menu.debugger_type.universal=Serial
+ide.debug_menu.universal.debug.tool=universal
+ide.debug_menu.debugger_type.hwdebugger=Hardware
+ide.debug_menu.hwdebugger=Debugger
+ide.debug_menu.hwdebugger.custom_debugger=Manual/Custom
+ide.debug_menu.hwdebugger.custom_debugger.debug.tool=dbg_external
+ide.meta_custom_debugger.sentence=Provides a build that includes debug defines and will launch a custom debugger if one is provided.
+ide.meta_custom_debugger.paragraph=This is option is for advanced use. It is recommended that a pre-configured debugger be selected when available in this list. Usage: Optionally add a customer debugger to the project. A 'debugger_launch.json' file shares the same command syntax that is used by the VsCode debugger. Custom debuggers can be targeted at a board and/or variant and/or configuration name. IE: [variant].[configuration_name][.]debugger_launch.json
+ide.meta_custom_debugger.reference.usage.url=https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md#customlaunchsetupcommands
+ide.meta_custom_debugger.reference.connect.url=https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2019
+ide.compiler_flags_no_opt=-O0
+ide.debug_menu.vm_disable_optimization=Disable Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_default=Default Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj=No Project  Optimization
+ide.debug_menu.vm_disable_opt_proj.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj_libs=No Project + Libraries Optimization
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_all=No Optimization
+ide.meta_vm_disable_opt_all.sentence=Disable compiler optimization for all sources:- Project, Library and Platform.
+ide.meta_vm_disable_opt_all.comment=After switching between 'No Optimization' and other optimization values, please click "Solution Clean" or switch off (or cycle) 'vMicro&gt;Compiler&gt;Shared Cache For Cores'. NOTE: Changing optimization settings can cause build errors or result in overly large programs.
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_core={ide.compiler_flags_no_opt}
+ide.appid=arduino16x
+location.sketchbook=C:\Users\jgranat\My Drive\Env\Documents\Arduino
+build.core.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\cores\esp8266
+vm.core.include=arduino.h
+vm.boardsource.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1
+runtime.platform.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1
+vm.platformname.name=esp8266
+build.arch=ESP8266
+</arduino.board.property_bag>
+        <arduino.build.mcu>esp8266</arduino.build.mcu>
+        <arduino.build.core>esp8266</arduino.build.core>
+        <visualmicro.application.name>arduino16x</visualmicro.application.name>
+        <visualmicro.package.name>esp8266</visualmicro.package.name>
+        <visualmicro.platform.name>esp8266</visualmicro.platform.name>
+        <arduino.upload.port>COM16</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega32u4 -B "%24(PackRepoDir)\atmel\ATmega_DFP\2.0.401\gcc\dev\atmega32u4"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>ARDUINO_ESP8266_WEMOS_D1MINI</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../DC31_Cnet_Badge_D1_WiFi</Value>
+      <Value>C:/Users/jgranat/My Drive/Env/Documents/Arduino/libraries/FastLED</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/EEPROM</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/libb64</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/variants/d1_mini</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags />
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__ESP8266_ESp8266__</Value>
+      <Value>__ESP8266_ESP8266__</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=80000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__ESP8266__</Value>
+      <Value>__ets__</Value>
+      <Value>ICACHE_FLASH</Value>
+      <Value>LWIP_OPEN_SRC</Value>
+      <Value>TCP_MSS=536</Value>
+      <Value>ARDUINO_ESP8266_WEMOS_D1MINI</Value>
+      <Value>ARDUINO_ARCH_ESP8266</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../DC31_Cnet_Badge_D1_WiFi</Value>
+      <Value>C:/Users/jgranat/My Drive/Env/Documents/Arduino/libraries/FastLED</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/EEPROM</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/libb64</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/spiffs</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/umm_malloc</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/variants/d1_mini</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip2/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/libc/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include</Value>
+      <Value>C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\2.0.401\include\</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../DC31_Cnet_Badge_D1_WiFi;C:/Users/jgranat/My Drive/Env/Documents/Arduino/libraries/FastLED;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun;C:/Program Files (x86)/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include-fixed;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.2/include;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/EEPROM;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/libb64;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/spiffs;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/cores/esp8266/umm_malloc;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/variants/d1_mini;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/libc/xtensa-lx106-elf/include;C:/Users/jgranat/AppData/Local/Temp/VMBuilds/DC31_Cnet_Badge_D1_WiFi/yun/Release/core;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/xtensa-lx106-elf/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/lib/gcc/xtensa-lx106-elf/4.8.2/include;C:/Users/jgranat/AppData/Local/arduino15/packages/esp8266/hardware/esp8266/2.4.1/tools/sdk/lwip2/include;{build.path}/core;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <arduino.board.name>esp8266_d1_mini</arduino.board.name>
+        <arduino.board.desc>WeMos D1 R2 &amp; mini</arduino.board.desc>
+        <arduino.board.property_bag>name=WeMos D1 R2 &amp; mini
+build.board=ESP8266_WEMOS_D1MINI
+build.variant=d1_mini
+upload.tool=esptool
+upload.maximum_data_size=81920
+upload.wait_for_upload_port=true
+upload.erase_cmd=
+serial.disableDTR=true
+serial.disableRTS=true
+build.mcu=esp8266
+build.core=esp8266
+build.spiffs_pagesize=256
+build.debug_port=
+build.debug_level=
+menu.CpuFrequency.80=80 MHz
+menu.CpuFrequency.80.build.f_cpu=80000000L
+menu.CpuFrequency.160=160 MHz
+menu.CpuFrequency.160.build.f_cpu=160000000L
+upload.resetmethod=nodemcu
+build.flash_mode=dio
+build.flash_freq=40
+menu.FlashSize.4M1M=4M (1M SPIFFS)
+menu.FlashSize.4M1M.build.flash_size=4M
+menu.FlashSize.4M1M.build.flash_size_bytes=0x400000
+menu.FlashSize.4M1M.build.flash_ld=eagle.flash.4m1m.ld
+menu.FlashSize.4M1M.build.spiffs_pagesize=256
+menu.FlashSize.4M1M.upload.maximum_size=1044464
+menu.FlashSize.4M1M.build.rfcal_addr=0x3FC000
+menu.FlashSize.4M1M.build.spiffs_start=0x300000
+menu.FlashSize.4M1M.build.spiffs_end=0x3FB000
+menu.FlashSize.4M1M.build.spiffs_blocksize=8192
+menu.FlashSize.4M3M=4M (3M SPIFFS)
+menu.FlashSize.4M3M.build.flash_size=4M
+menu.FlashSize.4M3M.build.flash_size_bytes=0x400000
+menu.FlashSize.4M3M.build.flash_ld=eagle.flash.4m.ld
+menu.FlashSize.4M3M.build.spiffs_pagesize=256
+menu.FlashSize.4M3M.upload.maximum_size=1044464
+menu.FlashSize.4M3M.build.rfcal_addr=0x3FC000
+menu.FlashSize.4M3M.build.spiffs_start=0x100000
+menu.FlashSize.4M3M.build.spiffs_end=0x3FB000
+menu.FlashSize.4M3M.build.spiffs_blocksize=8192
+menu.LwIPVariant.v2mss536=v2 Lower Memory
+menu.LwIPVariant.v2mss536.build.lwip_include=lwip2/include
+menu.LwIPVariant.v2mss536.build.lwip_lib=-llwip2
+menu.LwIPVariant.v2mss536.build.lwip_flags=-DLWIP_OPEN_SRC -DTCP_MSS=536
+menu.LwIPVariant.v2mss1460=v2 Higher Bandwidth
+menu.LwIPVariant.v2mss1460.build.lwip_include=lwip2/include
+menu.LwIPVariant.v2mss1460.build.lwip_lib=-llwip2_1460
+menu.LwIPVariant.v2mss1460.build.lwip_flags=-DLWIP_OPEN_SRC -DTCP_MSS=1460
+menu.LwIPVariant.Prebuilt=v1.4 Higher Bandwidth
+menu.LwIPVariant.Prebuilt.build.lwip_lib=-llwip_gcc
+menu.LwIPVariant.Prebuilt.build.lwip_flags=-DLWIP_OPEN_SRC
+menu.LwIPVariant.OpenSource=v1.4 Compile from source
+menu.LwIPVariant.OpenSource.build.lwip_lib=-llwip_src
+menu.LwIPVariant.OpenSource.build.lwip_flags=-DLWIP_OPEN_SRC
+menu.LwIPVariant.OpenSource.recipe.hooks.sketch.prebuild.1.pattern=make -C "{runtime.platform.path}/tools/sdk/lwip/src" install TOOLS_PATH="{runtime.tools.xtensa-lx106-elf-gcc.path}/bin/xtensa-lx106-elf-"
+menu.Debug.Disabled=Disabled
+menu.Debug.Disabled.build.debug_port=
+menu.Debug.Serial=Serial
+menu.Debug.Serial.build.debug_port=-DDEBUG_ESP_PORT=Serial
+menu.Debug.Serial1=Serial1
+menu.Debug.Serial1.build.debug_port=-DDEBUG_ESP_PORT=Serial1
+menu.DebugLevel.None____=None
+menu.DebugLevel.None____.build.debug_level=
+menu.DebugLevel.SSL=SSL
+menu.DebugLevel.SSL.build.debug_level=-DDEBUG_ESP_SSL
+menu.DebugLevel.TLS_MEM=TLS_MEM
+menu.DebugLevel.TLS_MEM.build.debug_level=-DDEBUG_ESP_TLS_MEM
+menu.DebugLevel.HTTP_CLIENT=HTTP_CLIENT
+menu.DebugLevel.HTTP_CLIENT.build.debug_level=-DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.HTTP_SERVER=HTTP_SERVER
+menu.DebugLevel.HTTP_SERVER.build.debug_level=-DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEM=SSL+TLS_MEM
+menu.DebugLevel.SSLTLS_MEM.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM
+menu.DebugLevel.SSLHTTP_CLIENT=SSL+HTTP_CLIENT
+menu.DebugLevel.SSLHTTP_CLIENT.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.SSLHTTP_SERVER=SSL+HTTP_SERVER
+menu.DebugLevel.SSLHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_CLIENT=TLS_MEM+HTTP_CLIENT
+menu.DebugLevel.TLS_MEMHTTP_CLIENT.build.debug_level=-DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.TLS_MEMHTTP_SERVER=TLS_MEM+HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_SERVER.build.debug_level=-DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.HTTP_CLIENTHTTP_SERVER=HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.HTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENT=SSL+TLS_MEM+HTTP_CLIENT
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENT.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT
+menu.DebugLevel.SSLTLS_MEMHTTP_SERVER=SSL+TLS_MEM+HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLHTTP_CLIENTHTTP_SERVER=SSL+HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.SSLHTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_CLIENTHTTP_SERVER=TLS_MEM+HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.TLS_MEMHTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVER=SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVER.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER
+menu.DebugLevel.CORE=CORE
+menu.DebugLevel.CORE.build.debug_level=-DDEBUG_ESP_CORE
+menu.DebugLevel.WIFI=WIFI
+menu.DebugLevel.WIFI.build.debug_level=-DDEBUG_ESP_WIFI
+menu.DebugLevel.HTTP_UPDATE=HTTP_UPDATE
+menu.DebugLevel.HTTP_UPDATE.build.debug_level=-DDEBUG_ESP_HTTP_UPDATE
+menu.DebugLevel.UPDATER=UPDATER
+menu.DebugLevel.UPDATER.build.debug_level=-DDEBUG_ESP_UPDATER
+menu.DebugLevel.OTA=OTA
+menu.DebugLevel.OTA.build.debug_level=-DDEBUG_ESP_OTA
+menu.DebugLevel.OOM=OOM
+menu.DebugLevel.OOM.build.debug_level=-DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+menu.DebugLevel.COREWIFIHTTP_UPDATEUPDATEROTAOOM=CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM
+menu.DebugLevel.COREWIFIHTTP_UPDATEUPDATEROTAOOM.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVERCOREWIFIHTTP_UPDATEUPDATEROTAOOM=SSL+TLS_MEM+HTTP_CLIENT+HTTP_SERVER+CORE+WIFI+HTTP_UPDATE+UPDATER+OTA+OOM
+menu.DebugLevel.SSLTLS_MEMHTTP_CLIENTHTTP_SERVERCOREWIFIHTTP_UPDATEUPDATEROTAOOM.build.debug_level=-DDEBUG_ESP_SSL -DDEBUG_ESP_TLS_MEM -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_CORE -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_ESP_OOM -include "umm_malloc/umm_malloc_cfg.h"
+menu.DebugLevel.NoAssert-NDEBUG=NoAssert-NDEBUG
+menu.DebugLevel.NoAssert-NDEBUG.build.debug_level=-DNDEBUG
+menu.FlashErase.none=Only Sketch
+menu.FlashErase.none.upload.erase_cmd=
+menu.FlashErase.sdk=Sketch + WiFi Settings
+menu.FlashErase.sdk.upload.erase_cmd=-ca "{build.rfcal_addr}" -cz 0x4000
+menu.FlashErase.all=All Flash Contents
+menu.FlashErase.all.upload.erase_cmd=-ca 0x0 -cz "{build.flash_size_bytes}"
+menu.UploadSpeed.921600=921600
+menu.UploadSpeed.921600.upload.speed=921600
+menu.UploadSpeed.9600=9600
+menu.UploadSpeed.9600.upload.speed=9600
+menu.UploadSpeed.57600=57600
+menu.UploadSpeed.57600.upload.speed=57600
+menu.UploadSpeed.115200=115200
+menu.UploadSpeed.115200.upload.speed=115200
+menu.UploadSpeed.230400.linux=230400
+menu.UploadSpeed.230400.macosx=230400
+menu.UploadSpeed.230400.upload.speed=230400
+menu.UploadSpeed.256000.windows=256000
+menu.UploadSpeed.256000.upload.speed=256000
+menu.UploadSpeed.460800.linux=460800
+menu.UploadSpeed.460800.macosx=460800
+menu.UploadSpeed.460800.upload.speed=460800
+menu.UploadSpeed.512000.windows=512000
+menu.UploadSpeed.512000.upload.speed=512000
+menu.UploadSpeed.256000=256000
+menu.UploadSpeed.512000=512000
+runtime.ide.path=C:\Program Files (x86)\Arduino
+runtime.os=windows
+build.system.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\system
+runtime.ide.version=108019
+target_package=esp8266
+target_platform=esp8266
+runtime.hardware.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266
+originalid=d1_mini
+intellisense.tools.path={compiler.toolchain.path}
+intellisense.include.paths={runtime.tools.xtensa-lx106-elf-gcc.path}\xtensa-lx106-elf\include\c++\4.8.2;{runtime.tools.xtensa-lx106-elf-gcc.path}\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;{runtime.tools.xtensa-lx106-elf-gcc.path}\xtensa-lx106-elf\include;{runtime.tools.xtensa-lx106-elf-gcc.path}\lib\gcc\xtensa-lx106-elf\4.8.2\include;{runtime.platform.path}\tools\sdk\include;{vm.intellisense.add-paths}
+tools.wwwfiles.name=ESP8266 Sketch Data Upload
+tools.wwwfiles.ssh=false
+tools.wwwfiles.cmd.windows=ESP8266FSUpload.exe
+recipe.wwwfiles.upload.pattern="{vm.path}/{tools.wwwfiles.cmd}" -serial.port={serial.port} -build.path="{build.path}" -target_platform="{target_platform}" -runtime.tools.mkspiffs.path="{runtime.tools.mkspiffs.path}" -board.name="{name}" -upload.verbose={upload.verbose} -upload.resetmethod={upload.resetmethod} -upload.speed={upload.speed}  -platform.path="{platform.path}" -project.name="{project.name}" -project.path="{project.path}" -tools.esptool.cmd="{tools.esptool.cmd}" -runtime.tools.esptool.path="{runtime.tools.esptool.path}" -compiler.path="{compiler.path}" -build.spiffs_start="{build.spiffs_start}" -build.spiffs_end="{build.spiffs_end}" -build.spiffs_pagesize="{build.spiffs_pagesize}" -build.spiffs_blocksize="{build.spiffs_blocksize}" -network.password={network.password} -network.auth_upload={network.auth_upload} -network.port={network.port}
+exceptions.serial.enabled=true
+exceptions.serial.messages={vm.platform.root.path}/hardware/esp8266/exceptions.txt
+exceptions.serial.regex.exception_number=Exception \(([0-9]*)\):
+exceptions.serial.regex.stack_addresses=40[0-2][0-9a-f]{5}\b
+exceptions.serial.resolve.addr2line.args=-aipfC -e"{build.path}/{build.project_name}.elf"
+exceptions.serial.resolve.addr2line.cmd=xtensa-lx106-elf-addr2line
+exceptions.serial.resolve.stack_addresses.pattern="{compiler.path}{addr2line.cmd}" {addr2line.args} {stack_addresses.list}
+upload.8dot3=false
+upload.verbose_disabled=true
+tools.gdbstub.cmd=xtensa-lx106-elf-gdb.exe
+tools.gdbstub.path={runtime.tools.xtensa-lx106-elf-gcc.path}/bin
+tools.gdbstub.debug.args=-ex "set remote hardware-breakpoint-limit 1" -ex "set remote hardware-watchpoint-limit 1" -ex "set remote interrupt-on-connect on" -ex "set remote kill-packet off" -ex "set remote symbol-lookup-packet off" -ex "set remote verbose-resume-packet off" -ex "mem 0x20000000 0x3fefffff ro cache" -ex "mem 0x3ff00000 0x3fffffff rw" -ex "mem 0x40000000 0x400fffff ro cache" -ex "mem 0x40100000 0x4013ffff rw cache" -ex "mem 0x40140000 0x5fffffff ro cache" -ex "mem 0x60000000 0x60001fff rw" -ex "set serial baud 115200" -ex "target remote \\.\{serial.debug.port}" -ex "file {{{build.path}/{build.project_name}.elf}}"
+tools.gdbstub.showLocalSerialPort=true
+debug_menu.debugger_type.hwdebugger=Hardware
+debug_menu.hwdebugger=Debugger
+debug_menu.hwdebugger.gdbstub=GDB Stub
+debug_menu.hwdebugger.gdbstub.debug.tool=gdbstub
+meta_gdbstub.sentence=This debugger requires the esp8266 2.5.0+ Core to be installed (install/update via Boards Manager).
+meta_gdbstub.comment=To use this debugger, include the &lt;GDBStub.h&gt;, add 'debug_init();' to setup(). Set vMicro &gt; Debugger &gt; 'Compiler Optimization' to 'No Project', 'No Project + Libraries' or 'None' when debugging. (NOTE: Changing the optimization setting for this platform might cause compilation errors with certain code such as HardwareSerial.)
+meta_gdbstub.image.connect=https://www.visualmicro.com/pics/Debug-Break-ESP8266Huzzah_USBOnly.png
+meta_gdbstub.image.operation=https://www.visualmicro.com/pics/Debug-Break-ESP8266-GDBStub-VSOnly.png
+meta_gdbstub.reference.usage.url=https://www.visualmicro.com/page/User-Guide.aspx?doc=Arduino-gdb-Tutorial.html
+vmboard.totalpins=18
+vmboard.totalanalogpins=1
+tools.wwwfiles.cmd=ESP8266FSUpload.exe
+version=2.4.1
+compiler.warning_flags=-w
+compiler.warning_flags.none=-w
+compiler.warning_flags.default=
+compiler.warning_flags.more=-Wall
+compiler.warning_flags.all=-Wall -Wextra
+build.lwip_lib=-llwip_gcc
+build.lwip_include=lwip/include
+build.lwip_flags=-DLWIP_OPEN_SRC
+build.float=-u _printf_float -u _scanf_float
+build.led=
+compiler.path={runtime.tools.xtensa-lx106-elf-gcc.path}/bin/
+compiler.sdk.path={runtime.platform.path}/tools/sdk
+compiler.libc.path={runtime.platform.path}/tools/sdk/libc/xtensa-lx106-elf
+compiler.cpreprocessor.flags=-D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I{compiler.sdk.path}/include" "-I{compiler.sdk.path}/{build.lwip_include}" "-I{compiler.libc.path}/include" "-I{build.path}/core"
+compiler.c.cmd=xtensa-lx106-elf-gcc
+compiler.c.flags=-c {compiler.warning_flags} -Os -g -Wpointer-arith -Wno-implicit-function-declaration -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -falign-functions=4 -MMD -std=gnu99 -ffunction-sections -fdata-sections
+compiler.S.cmd=xtensa-lx106-elf-gcc
+compiler.S.flags=-c -g -x assembler-with-cpp -MMD -mlongcalls
+compiler.c.elf.flags=-g {compiler.warning_flags} -Os -nostdlib -Wl,--no-check-sections -u call_user_start {build.float} -Wl,-static "-L{compiler.sdk.path}/lib" "-L{compiler.sdk.path}/ld" "-L{compiler.libc.path}/lib" "-T{build.flash_ld}" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,spi_flash_read
+compiler.c.elf.cmd=xtensa-lx106-elf-gcc
+compiler.c.elf.libs=-lhal -lphy -lpp -lnet80211 {build.lwip_lib} -lwpa -lcrypto -lmain -lwps -laxtls -lespnow -lsmartconfig -lairkiss -lwpa2 -lstdc++ -lm -lc -lgcc
+compiler.cpp.cmd=xtensa-lx106-elf-g++
+compiler.cpp.flags=-c {compiler.warning_flags} -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections
+compiler.as.cmd=xtensa-lx106-elf-as
+compiler.ar.cmd=xtensa-lx106-elf-ar
+compiler.ar.flags=cru
+compiler.elf2hex.cmd=esptool
+compiler.elf2hex.flags=
+compiler.size.cmd=xtensa-lx106-elf-size
+compiler.esptool.cmd=esptool.exe
+compiler.esptool.cmd.windows=esptool.exe
+build.extra_flags=-DESP8266
+compiler.c.extra_flags=
+compiler.c.elf.extra_flags=
+compiler.S.extra_flags=
+compiler.cpp.extra_flags=
+compiler.ar.extra_flags=
+compiler.objcopy.eep.extra_flags=
+compiler.elf2hex.extra_flags=
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.cpreprocessor.flags} {compiler.c.flags} -DF_CPU={build.f_cpu} {build.lwip_flags} {build.debug_port} {build.debug_level} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DARDUINO_BOARD="{build.board}" {build.led} {compiler.c.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpreprocessor.flags} {compiler.cpp.flags} -DF_CPU={build.f_cpu} {build.lwip_flags} {build.debug_port} {build.debug_level} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DARDUINO_BOARD="{build.board}" {build.led} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.S.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.cpreprocessor.flags} {compiler.S.flags} -DF_CPU={build.f_cpu} {build.lwip_flags} {build.debug_port} {build.debug_level} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DARDUINO_BOARD="{build.board}" {build.led} {compiler.c.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} {compiler.ar.extra_flags} "{archive_file_path}" "{object_file}"
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {compiler.c.elf.flags} {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" -Wl,--start-group {object_files} "{build.path}/{archive_file}" {compiler.c.elf.libs} -Wl,--end-group  "-L{build.path}"
+recipe.objcopy.eep.pattern=
+recipe.objcopy.hex.pattern="{runtime.tools.esptool.path}/{compiler.esptool.cmd}" -eo "{runtime.platform.path}/bootloaders/eboot/eboot.elf" -bo "{build.path}/{build.project_name}.bin" -bm {build.flash_mode} -bf {build.flash_freq} -bz {build.flash_size} -bs .text -bp 4096 -ec -eo "{build.path}/{build.project_name}.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+recipe.output.tmp_file={build.project_name}.bin
+recipe.output.save_file={build.project_name}.{build.variant}.bin
+recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
+recipe.size.regex=^(?:\.irom0\.text|\.text|\.data|\.rodata|)\s+([0-9]+).*
+recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
+tools.esptool.cmd=esptool.exe
+tools.esptool.cmd.windows=esptool.exe
+tools.esptool.path={runtime.tools.esptool.path}
+tools.esptool.network_cmd=python.exe
+tools.esptool.network_cmd.windows=python.exe
+tools.esptool.upload.protocol=esp
+tools.esptool.upload.params.verbose=-vv
+tools.esptool.upload.params.quiet=
+tools.esptool.upload.pattern="{path}/{cmd}" {upload.verbose} -cd {upload.resetmethod} -cb {upload.speed} -cp "{serial.port}" {upload.erase_cmd} -ca 0x00000 -cf "{build.path}/{build.project_name}.bin"
+tools.esptool.upload.network_pattern="{network_cmd}" "{runtime.platform.path}/tools/espota.py" -i "{serial.port}" -p "{network.port}" "--auth={network.password}" -f "{build.path}/{build.project_name}.bin"
+tools.mkspiffs.cmd=mkspiffs.exe
+tools.mkspiffs.cmd.windows=mkspiffs.exe
+tools.mkspiffs.path={runtime.tools.mkspiffs.path}
+upload.verify=
+tools.vmopenocd.cmd=bin/openocd.exe
+tools.vmopenocd.cmd.windows=bin/openocd.exe
+tools.vmopenocd.debug.params.verbose=-d2
+tools.vmopenocd.debug.params.quiet=-d0
+tools.vmopenocd.debug.address=localhost:3333
+tools.vmopenocd.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.scriptPath=-s "{path}/scripts/"
+tools.vmopenocd.logging=-l "{{build.path}/{build.project_name}_DebugOpenOCD.log}"
+tools.vmopenocd.boardCmd=
+tools.vmopenocd.targetCmd=
+tools.vmopenocd.initCmd=
+tools.vmopenocd.debug.pattern="{path}/{cmd}" {debug.verbose} {logging} {scriptPath} {boardCmd} {targetCmd} {initCmd}
+tools.vmopenocd.program.cmd=bin/openocd.exe
+tools.vmopenocd.program.cmd.windows=bin/openocd.exe
+tools.vmopenocd.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.program.address=localhost:3333
+tools.vmopenocd.program.params.verbose=-d2
+tools.vmopenocd.program.params.quiet=-d0
+tools.vmopenocd.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.vmopenocd.program.pattern="{path}/{cmd}" {program.verbose} {scriptPath} {boardCmd} {targetCmd} -c "echo -n {{program.elf.message}}" {programCmd}
+tools.atmelICE.protocol=
+tools.atmelICE.debug.cmd=arm-none-eabi-gdb.exe
+tools.atmelICE.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.atmelICE.debug.pattern="{path}/{cmd}"
+tools.atmelICE.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.atmelICE.server.initCmd=-c "init"
+tools.atmelICE.server.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.server.tool=vmopenocd
+tools.atmelICE.debug.server=vmopenocd
+tools.atmelICE.program.scriptPath=-s "{program.path}/scripts/"
+tools.atmelICE.program.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.program.cmd=bin/openocd.exe
+tools.atmelICE.program.cmd.windows=bin/openocd.exe
+tools.atmelICE.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.atmelICE.program.address=localhost:3333
+tools.atmelICE.program.params.verbose=-d2
+tools.atmelICE.program.params.quiet=-d0
+tools.atmelICE.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.atmelICE.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.atmelICE.program.extra_params=
+tools.atmelICE.program.protocol=
+tools.atmelICE.erase.params.verbose=-d3
+tools.atmelICE.erase.params.quiet=-d0
+tools.atmelICE.erase.pattern=
+tools.jlink.cmd=arm-none-eabi-gdb.exe
+tools.jlink.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.jlink.pattern="{path}/{cmd}"
+tools.jlink.server.tool=vmopenocd
+tools.jlink.debug.server=vmopenocd
+tools.jlink.server.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.jlink.server.initCmd=-c "init"
+tools.jlink.program.scriptPath=-s "{program.path}/scripts/"
+tools.jlink.program.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.program.cmd=bin/openocd.exe
+tools.jlink.program.cmd.windows=bin/openocd.exe
+tools.jlink.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.program.address=localhost:3333
+tools.jlink.program.params.verbose=-d2
+tools.jlink.program.params.quiet=-d0
+tools.jlink.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.jlink.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.jlink.upload.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.upload.cmd=bin/openocd.exe
+tools.jlink.upload.cmd.windows=bin/openocd.exe
+tools.jlink.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.upload.address=localhost:3333
+tools.jlink.upload.params.verbose=-d2
+tools.jlink.upload.params.quiet=-d0
+tools.jlink.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.bmp_upload.cmd=arm-none-eabi-gdb.exe
+tools.bmp_upload.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
+tools.bmp_upload.program.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.upload.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.bmp_upload.server.initCmd=-c "init"
+tools.bmp_upload.showLocalSerialPort=true
+tools.bmp_upload.debug.server=
+tools.stlinkv2.description=
+tools.stlinkv2.cmd=arm-none-eabi-gdb.exe
+tools.stlinkv2.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.stlinkv2.pattern="{path}/{cmd}"
+tools.stlinkv2.server.tool=vmopenocd
+tools.stlinkv2.debug.server=vmopenocd
+tools.stlinkv2.server.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.stlinkv2.server.initCmd=-c "init"
+tools.stlinkv2.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.stlinkv2.upload.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.upload.cmd=bin/openocd.exe
+tools.stlinkv2.upload.cmd.windows=bin/openocd.exe
+tools.stlinkv2.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.stlinkv2.upload.address=localhost:3333
+tools.stlinkv2.upload.params.verbose=-d2
+tools.stlinkv2.upload.params.quiet=-d0
+tools.stlinkv2.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.stlinkv2.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.stlinkv2.upload.extra_params=
+tools.stlinkv2.upload.protocol=
+tools.stlinkv2.protocol=
+tools.f2232mm.cmd=arm-none-eabi-gdb.exe
+tools.f2232mm.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232mm.pattern="{path}/{cmd}" {args}
+tools.f2232mm.server.tool=vmopenocd
+tools.f2232mm.debug.server=vmopenocd
+tools.f2232mm.server.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232mm.server.initCmd=-c "init"
+tools.f2232mm.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232mm.upload.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.upload.cmd=bin/openocd.exe
+tools.f2232mm.upload.cmd.windows=bin/openocd.exe
+tools.f2232mm.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232mm.upload.address=localhost:3333
+tools.f2232mm.upload.params.verbose=-d2
+tools.f2232mm.upload.params.quiet=-d0
+tools.f2232mm.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232mm.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232mm.upload.extra_params=
+tools.f2232mm.upload.protocol=
+tools.f2232mm.protocol=
+tools.f2232h.server.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.cmd=arm-none-eabi-gdb.exe
+tools.f2232h.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232h.pattern="{path}/{cmd}"
+tools.f2232h.server.tool=vmopenocd
+tools.f2232h.debug.server=vmopenocd
+tools.f2232h.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232h.server.initCmd=-c "init"
+tools.f2232h.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232h.upload.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.upload.cmd=bin/openocd.exe
+tools.f2232h.upload.cmd.windows=bin/openocd.exe
+tools.f2232h.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232h.upload.address=localhost:3333
+tools.f2232h.upload.params.verbose=-d2
+tools.f2232h.upload.params.quiet=-d0
+tools.f2232h.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232h.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232h.upload.extra_params=
+tools.f2232h.upload.protocol=
+tools.f2232h.protocol=
+vm.platform.root.path=C:\Program Files (x86)\Atmel\Studio\7.0\Extensions\jikf5v4k.012\Micro Platforms\arduino16x
+runtime.tools.signing={runtime.platform.path}/tools/signing.py
+runtime.tools.elf2bin={runtime.platform.path}/tools/elf2bin.py
+runtime.tools.sizes={runtime.platform.path}/tools/sizes.py
+runtime.tools.makecorever={runtime.platform.path}/tools/makecorever.py
+runtime.tools.eboot={runtime.platform.path}/bootloaders/eboot/eboot.elf
+build.vtable_flags=-DVTABLES_IN_FLASH
+build.sslflags=
+build.exception_flags=-fno-exceptions
+build.stdcpp_lib=-lstdc++
+build.stdcpp_level=-std=gnu++11
+build.sdk=NONOSDK22x_190703
+build.debug_flags=
+build.protocol_flags=
+recipe.hooks.sketch.prebuild.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.signing}" --mode header --publickey "{build.source.path}/public.key" --out "{build.path}/core/Updater_Signing.h"
+recipe.hooks.linking.prelink.1.pattern="{compiler.path}{compiler.c.cmd}" -CC -E -P {build.vtable_flags} "{runtime.platform.path}/tools/sdk/ld/eagle.app.v6.common.ld.h" -o "{build.path}/local.eagle.app.v6.common.ld"
+recipe.objcopy.hex.1.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.elf2bin}" --eboot "{runtime.tools.eboot}" --app "{build.path}/{build.project_name}.elf" --flash_mode {build.flash_mode} --flash_freq {build.flash_freq} --flash_size {build.flash_size} --path "{runtime.tools.xtensa-lx106-elf-gcc.path}/bin" --out "{build.path}/{build.project_name}.bin"
+recipe.objcopy.hex.2.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.signing}" --mode sign --privatekey "{build.source.path}/private.key" --bin "{build.path}/{build.project_name}.bin" --out "{build.path}/{build.project_name}.bin.signed" --legacy "{build.path}/{build.project_name}.bin.legacy_sig"
+recipe.objcopy.hex.3.pattern="{runtime.tools.python3.path}/python3" "{runtime.tools.sizes}" --elf "{build.path}/{build.project_name}.elf" --path "{runtime.tools.xtensa-lx106-elf-gcc.path}/bin"
+tools.mklittlefs.cmd=mklittlefs.exe
+tools.mklittlefs.cmd.windows=mklittlefs.exe
+tools.mklittlefs.path={runtime.platform.path}/tools/mklittlefs
+runtime.tools.esptool.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\esptool\0.4.13
+runtime.tools.esptool-0.4.13.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\esptool\0.4.13
+runtime.tools.xtensa-lx106-elf-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2
+runtime.tools.xtensa-lx106-elf-gcc-1.20.0-26-gb404fb9-2.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2
+runtime.tools.mkspiffs.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\mkspiffs\0.2.0
+runtime.tools.mkspiffs-0.2.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\tools\mkspiffs\0.2.0
+runtime.tools.arduinoOTA.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arduinoOTA\1.2.1
+runtime.tools.arduinoOTA-1.2.1.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arduinoOTA\1.2.1
+runtime.tools.arduinoOTA-1.3.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arduinoOTA\1.3.0
+runtime.tools.arm-none-eabi-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arm-none-eabi-gcc\9-2019q4
+runtime.tools.arm-none-eabi-gcc-9-2019q4.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\arm-none-eabi-gcc\9-2019q4
+runtime.tools.avrdude.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avrdude\6.3.0-arduino17
+runtime.tools.avrdude-6.3.0-arduino17.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avrdude\6.3.0-arduino17
+runtime.tools.avr-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5
+runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino5.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5
+runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+runtime.tools.bossac.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\bossac\1.8.0-48-gb176eee
+runtime.tools.bossac-1.7.0-arduino3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\bossac\1.7.0-arduino3
+runtime.tools.bossac-1.8.0-48-gb176eee.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\bossac\1.8.0-48-gb176eee
+runtime.tools.CMSIS.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS\5.4.0
+runtime.tools.CMSIS-5.4.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS\5.4.0
+runtime.tools.CMSIS-Atmel.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS-Atmel\1.2.0
+runtime.tools.CMSIS-Atmel-1.2.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\CMSIS-Atmel\1.2.0
+runtime.tools.esptool_py.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\esptool_py\2.6.1
+runtime.tools.esptool_py-2.6.1.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\esptool_py\2.6.1
+runtime.tools.mklittlefs.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\mklittlefs\2.5.0-4-fe5bb56
+runtime.tools.mklittlefs-2.5.0-4-fe5bb56.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\mklittlefs\2.5.0-4-fe5bb56
+runtime.tools.mkspiffs-0.2.3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\mkspiffs\0.2.3
+runtime.tools.mkspiffs-2.5.0-4-b40a506.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\mkspiffs\2.5.0-4-b40a506
+runtime.tools.openocd.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\openocd\0.10.0-arduino7
+runtime.tools.openocd-0.10.0-arduino7.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\openocd\0.10.0-arduino7
+runtime.tools.pqt-elf2uf2.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-elf2uf2\1.4.0-b-cb31b54
+runtime.tools.pqt-elf2uf2-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-elf2uf2\1.4.0-b-cb31b54
+runtime.tools.pqt-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-gcc\1.4.0-b-cb31b54
+runtime.tools.pqt-gcc-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-gcc\1.4.0-b-cb31b54
+runtime.tools.pqt-mklittlefs.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-mklittlefs\1.4.0-b-cb31b54
+runtime.tools.pqt-mklittlefs-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-mklittlefs\1.4.0-b-cb31b54
+runtime.tools.pqt-openocd.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-openocd\1.4.0-b-cb31b54
+runtime.tools.pqt-openocd-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-openocd\1.4.0-b-cb31b54
+runtime.tools.pqt-pioasm.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-pioasm\1.4.0-b-cb31b54
+runtime.tools.pqt-pioasm-1.4.0-b-cb31b54.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-pioasm\1.4.0-b-cb31b54
+runtime.tools.pqt-python3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-python3\1.0.1-base-3a57aed
+runtime.tools.pqt-python3-1.0.1-base-3a57aed.path=C:\Users\jgranat\AppData\Local\arduino15\packages\rp2040\tools\pqt-python3\1.0.1-base-3a57aed
+runtime.tools.python3.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\python3\3.7.2-post1
+runtime.tools.python3-3.7.2-post1.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\python3\3.7.2-post1
+runtime.tools.tools-avr.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+runtime.tools.xtensa-esp32-elf-gcc.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-80-g6c4433a-5.2.0
+runtime.tools.xtensa-esp32-elf-gcc-1.22.0-80-g6c4433a-5.2.0.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp32\tools\xtensa-esp32-elf-gcc\1.22.0-80-g6c4433a-5.2.0
+runtime.tools.xtensa-lx106-elf-gcc-2.5.0-4-b40a506.path=C:\Users\jgranat\AppData\Local\arduino15\packages\wifiduck\tools\xtensa-lx106-elf-gcc\2.5.0-4-b40a506
+runtime.vm.boardinfo.id=esp8266_d1_mini
+runtime.vm.boardinfo.name=esp8266_d1_mini
+runtime.vm.boardinfo.desc=WeMos D1 R2 &amp; mini
+runtime.vm.boardinfo.src_location=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1
+ide.hint=Use installed IDE (hardware, reference/help + libraries)
+ide.location.key=Arduino16x
+ide.location.ide.winreg=Arduino 1.6.x Application
+ide.location.sketchbook.winreg=Arduino 1.6.x Sketchbook
+ide.location.sketchbook.preferences=sketchbook.path
+ide.default.revision_name=1.8.13
+ide.default.version=10800
+ide.default.package=arduino
+ide.default.platform=avr
+ide.multiplatform=true
+ide.includes=Arduino.h
+ide.exe_name=arduino
+ide.recipe.preproc.defines.flags=-w -x c++ -E -dM
+ide.platformswithoutpackage=false
+ide.includes.fallback=wprogram.h
+ide.extension=ino
+ide.extension.fallback=pde
+ide.versionGTEQ=160
+ide.exe=arduino.exe
+ide.builder.exe=arduinobuilder.exe
+ide.builder.name=Arduino Builder
+ide.hosts=atmel
+ide.url=https://www.visualmicro.com/page/Download-Arduino-Or-Other-Supporting-IDEs.aspx
+ide.help.reference.path=reference
+ide.help.reference.path2=reference\www.arduino.cc\en\Reference
+ide.help.reference.serial=reference\www.arduino.cc\en\Serial
+ide.location.preferences.portable={runtime.ide.path}\portable
+ide.location.preferences.arduinoData={runtime.sketchbook.path}\ArduinoData
+ide.location.preferences=%VM_APPDATA_LOCAL%\arduino15\preferences.txt
+ide.location.preferences_fallback=%VM_APPDATA_ROAMING%\arduino15\preferences.txt
+ide.location.contributions=%VM_APPDATA_LOCAL%\arduino15
+ide.location.contributions_fallback=%VM_APPDATA_ROAMING%\arduino15
+ide.contributions.boards.allow=true
+ide.contributions.boards.ignore_unless_rewrite_found=true
+ide.contributions.libraries.allow=true
+ide.contributions.boards.support.urls.wiki=https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls
+ide.create_platforms_from_boardsTXT.teensy=build.core
+vm.debug=true
+software=ARDUINO
+ssh.user.name=root
+ssh.user.default.password=arduino
+ssh.host.wwwfiles.path=/www/sd
+build.working_directory={runtime.ide.path}\java\bin
+runtime.tools.vm_web_debugger.path={vm.platform.root.path}/../../Micro Debuggers/WebDebugger
+recipe.hooks.vmdeploy.vm_web_debugger_postupload.1.pattern="{runtime.tools.vm_web_debugger.path}/DeployMicroWebserver.exe" "{sketch_path}" "{serial.port}" "{runtime.hardware.path}\.."
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.1.pattern=notepad.exe "{sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat"
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.2.pattern={sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat
+ide.debug_menu.debugger_type=Debug
+ide.debug_menu.debugger_type.none=Off
+ide.debug_menu.none.debug.tool=no_debug
+ide.debug_menu.debugger_type.universal=Serial
+ide.debug_menu.universal.debug.tool=universal
+ide.debug_menu.debugger_type.hwdebugger=Hardware
+ide.debug_menu.hwdebugger=Debugger
+ide.debug_menu.hwdebugger.custom_debugger=Manual/Custom
+ide.debug_menu.hwdebugger.custom_debugger.debug.tool=dbg_external
+ide.meta_custom_debugger.sentence=Provides a build that includes debug defines and will launch a custom debugger if one is provided.
+ide.meta_custom_debugger.paragraph=This is option is for advanced use. It is recommended that a pre-configured debugger be selected when available in this list. Usage: Optionally add a customer debugger to the project. A 'debugger_launch.json' file shares the same command syntax that is used by the VsCode debugger. Custom debuggers can be targeted at a board and/or variant and/or configuration name. IE: [variant].[configuration_name][.]debugger_launch.json
+ide.meta_custom_debugger.reference.usage.url=https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md#customlaunchsetupcommands
+ide.meta_custom_debugger.reference.connect.url=https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2019
+ide.compiler_flags_no_opt=-O0
+ide.debug_menu.vm_disable_optimization=Disable Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_default=Default Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj=No Project  Optimization
+ide.debug_menu.vm_disable_opt_proj.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj_libs=No Project + Libraries Optimization
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_all=No Optimization
+ide.meta_vm_disable_opt_all.sentence=Disable compiler optimization for all sources:- Project, Library and Platform.
+ide.meta_vm_disable_opt_all.comment=After switching between 'No Optimization' and other optimization values, please click "Solution Clean" or switch off (or cycle) 'vMicro&gt;Compiler&gt;Shared Cache For Cores'. NOTE: Changing optimization settings can cause build errors or result in overly large programs.
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_core={ide.compiler_flags_no_opt}
+ide.appid=arduino16x
+location.sketchbook=C:\Users\jgranat\My Drive\Env\Documents\Arduino
+build.core.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1\cores\esp8266
+vm.core.include=arduino.h
+vm.boardsource.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1
+runtime.platform.path=C:\Users\jgranat\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.1
+vm.platformname.name=esp8266
+build.arch=ESP8266
+</arduino.board.property_bag>
+        <arduino.build.mcu>esp8266</arduino.build.mcu>
+        <arduino.build.core>esp8266</arduino.build.core>
+        <visualmicro.application.name>arduino16x</visualmicro.application.name>
+        <visualmicro.package.name>esp8266</visualmicro.package.name>
+        <visualmicro.platform.name>esp8266</visualmicro.platform.name>
+        <arduino.upload.port>COM16</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DC31_Cnet_Badge_D1_WiFi.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="colorPalette.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="input.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="patterns.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="utils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="XYmatrix.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.DC31_Cnet_Badge_D1_WiFi.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
