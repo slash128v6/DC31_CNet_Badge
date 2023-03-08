@@ -1,0 +1,13 @@
+PCBWay.com Ordering
+
+Front - 
+0.8mm thickness
+Blue soldermask
+No silkscreen
+No drills
+No PCB ID
+
+Rear - 
+1.6mm thickness
+Matte Black
+No PCB ID
