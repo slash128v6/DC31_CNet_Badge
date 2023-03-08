@@ -1,0 +1,21 @@
+Drill report for DC31_Cnet_Badge_Front.kicad_pcb
+Created on 2/14/2023 2:54:40 PM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'DC31_Cnet_Badge_Front-PTH.drl' contains
+    plated through holes:
+    =============================================================
+
+    Total plated holes count 0
+
+
+Drill file 'DC31_Cnet_Badge_Front-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
