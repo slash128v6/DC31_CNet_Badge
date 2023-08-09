@@ -120,7 +120,7 @@ Press SW2 button to cycle through available brightness levels.
 Press and hold SW2 button for one second to reset brightness to default value.
 
 For WiFi control connect the SSID using the key, both defined in "secrets.h".
-(images/default is Neopixel/neopixel but recommended to change to something unique).
+(images/default is CompuNet/compunet but recommended to change to something unique).
 
 Using a web browser connect to [http://192.168.4.1](images/)
 The same functions available using buttons are available on the web page.
