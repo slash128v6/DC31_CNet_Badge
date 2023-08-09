@@ -1,2 +1,2 @@
-#define SECRET_SSID "Neopixel"
-#define SECRET_PASS "neopixel"
+#define SECRET_SSID "CompuNet"
+#define SECRET_PASS "compunet"
